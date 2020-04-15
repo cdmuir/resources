@@ -1,0 +1,43 @@
+\documentclass{article}
+
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=3in]{geometry}
+
+\pagenumbering{gobble}
+
+\usepackage{graphicx} % for including figure
+
+\usepackage{fontspec} % need to run xelatex, otherwise comment out  this and next line and use pdflatex
+\setmainfont{Optima}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lipsum}
+
+\renewcommand{\headrulewidth}{0pt} % remove line in header
+\setlength{\headheight}{1.5in} % add enough space or figure
+
+% download official images here:
+% https://www.hawaii.edu/offices/communications/standards/graphics-standards/
+\lhead{\includegraphics[width=2.68in]{MANOA/color/left.eps}}
+\rhead{
+  {\fontsize{8}{10}Colleges of Arts and Sciences}\\
+  {\fontsize{8}{10} \bf College of Natural Sciences}\\
+  {\fontsize{9}{11} \bf School of Life Sciences}
+}
+\rfoot{
+  {\fontsize{8}{10}2538 McCarthy Mall, Edmondson 216}\\
+  {\fontsize{8}{10}Honolulu, Hawai’i 96822}\\
+  {\fontsize{8}{10}Fax: 808.956.4745}\\
+  {\fontsize{8}{10}lifesci@hawaii.edu}\\
+  {\fontsize{8}{10}https://lifesciences.manoa.hawaii.edu/}\\
+  {\fontsize{6}{8}An Equal Opportunity/Affirmative Action Institution}
+}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\lipsum[1]
+
+\end{document}
